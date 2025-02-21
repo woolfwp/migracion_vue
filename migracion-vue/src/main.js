@@ -1,5 +1,6 @@
-import { createApp } from 'vue'
-import './assets/index.css'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import './style.css'; // Asegúrate de importar los estilos
 
-createApp(App).mount('#app')
+createApp(App).mount('#app');
+

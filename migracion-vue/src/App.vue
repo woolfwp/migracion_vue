@@ -1,32 +1,18 @@
 <template>
-  <Navbar />
-  <ProductsSection />
-  <RegresiveCount />
+  <div>
+    <h1>Hola, Vue está funcionando 🚀</h1>
+    <Products />
+    <RegresiveCount />
+  </div>
 </template>
 
-<script>
-import Navbar from './components/Navbar.vue';
-import ProductsSection from './components/ProductsSection.vue';
+<script setup>
+import Products from './components/ProductsSection.vue';
 import RegresiveCount from './components/RegresiveCount.vue';
-
-export default {
-  components: {
-    Navbar,
-    ProductsSection,
-    RegresiveCount
-  }
-};
 </script>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+<style>
+h1 {
+  color: blue;
 }
 </style>
